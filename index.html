@@ -7,10 +7,9 @@
     <title>Kenth Manuel | Financial & Administrative Support</title>
 
     <style>
-
         /* =========================
            BASIC RESET
-        ========================= */
+        ========================== */
 
         * {
             margin: 0;
@@ -25,30 +24,33 @@
         body {
             font-family: Arial, Helvetica, sans-serif;
             background: #f6f1e8;
-            color: #3d2b20;
-            line-height: 1.7;
+            color: #2f241e;
+            line-height: 1.6;
         }
 
         img {
             max-width: 100%;
+            display: block;
         }
 
         a {
-            color: inherit;
             text-decoration: none;
+            color: inherit;
         }
 
 
         /* =========================
            NAVIGATION
-        ========================= */
+        ========================== */
 
         nav {
             position: sticky;
             top: 0;
             z-index: 1000;
+
             background: #3d2b20;
             color: #fffaf3;
+
             padding: 18px 6%;
         }
 
@@ -59,688 +61,494 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-
             gap: 30px;
         }
 
         .logo {
-            font-size: 1.3rem;
-            font-weight: bold;
-            letter-spacing: 1px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
         }
 
         .nav-links {
             display: flex;
-            gap: 25px;
+            gap: 28px;
             list-style: none;
             flex-wrap: wrap;
         }
 
         .nav-links a {
             font-size: 0.9rem;
-            color: #fffaf3;
-
-            transition: opacity 0.3s ease;
+            letter-spacing: 0.5px;
+            transition: opacity 0.2s ease;
         }
 
         .nav-links a:hover {
-            opacity: 0.7;
+            opacity: 0.65;
         }
 
 
         /* =========================
-           GENERAL
-        ========================= */
+           GENERAL SECTION
+        ========================== */
+
+        section {
+            padding: 100px 7%;
+        }
 
         .container {
-            width: 88%;
-            max-width: 1150px;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
-        section {
-            padding: 90px 0;
-        }
-
-        .section-label {
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            font-size: 0.75rem;
-            font-weight: bold;
-            color: #8b6f55;
-            margin-bottom: 10px;
-        }
-
-        h2 {
-            font-size: 2.5rem;
-            line-height: 1.2;
-            margin-bottom: 10px;
-            color: #3d2b20;
-        }
-
-        .section-subtitle {
-            font-size: 1.15rem;
-            color: #80644e;
-            font-weight: 500;
-            margin-bottom: 35px;
+        .section-title {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(3rem, 7vw, 5.8rem);
+            font-weight: 400;
+            line-height: 1;
+            color: #241914;
+            margin-bottom: 70px;
         }
 
         .section-intro {
-            max-width: 700px;
-            color: #66564a;
-            margin-bottom: 45px;
+            max-width: 800px;
+            font-size: 1.1rem;
+            color: #62544c;
+            margin-bottom: 50px;
         }
 
 
         /* =========================
            HOME
-        ========================= */
+        ========================== */
 
         #home {
-            min-height: 88vh;
-
+            min-height: 90vh;
             display: flex;
             align-items: center;
 
             background: #efe5d5;
-
-            padding: 70px 0;
+            padding-top: 90px;
+            padding-bottom: 90px;
         }
 
         .hero {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+
             display: grid;
-
             grid-template-columns: 1.1fr 0.9fr;
-
             align-items: center;
-
             gap: 70px;
         }
 
-        .hero-text h1 {
-            font-size: clamp(3rem, 6vw, 5.2rem);
-
-            line-height: 1;
-
-            margin-bottom: 20px;
-
-            color: #3d2b20;
+        .hero-small {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #947363;
+            margin-bottom: 18px;
         }
 
-        .hero-title {
-            font-size: 1.25rem;
-
-            font-weight: bold;
-
-            color: #80644e;
-
-            margin-bottom: 20px;
+        .hero h1 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(4rem, 8vw, 7rem);
+            font-weight: 400;
+            line-height: 0.95;
+            color: #241914;
+            margin-bottom: 25px;
         }
 
-        .hero-description {
+        .hero-role {
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: #4a3529;
+            margin-bottom: 22px;
+        }
+
+        .hero-text {
             max-width: 650px;
-
-            font-size: 1.05rem;
-
-            color: #5d4d41;
-
-            margin-bottom: 30px;
+            font-size: 1.08rem;
+            color: #62544c;
+            margin-bottom: 32px;
         }
 
-
-        /* =========================
-           BUTTONS
-        ========================= */
-
-        .buttons {
+        .hero-buttons {
             display: flex;
-
             gap: 15px;
-
             flex-wrap: wrap;
         }
 
         .button {
             display: inline-block;
-
             padding: 13px 23px;
 
-            border-radius: 5px;
-
-            font-weight: bold;
-
-            transition: all 0.3s ease;
-        }
-
-        .button-primary {
-            background: #3d2b20;
-
-            color: #fffaf3;
-        }
-
-        .button-primary:hover {
-            background: #5a4030;
-
-            transform: translateY(-2px);
-        }
-
-        .button-secondary {
             border: 1px solid #3d2b20;
+            background: #3d2b20;
+            color: #fffaf3;
 
+            font-size: 0.9rem;
+            font-weight: 600;
+
+            transition: all 0.2s ease;
+        }
+
+        .button:hover {
+            background: transparent;
             color: #3d2b20;
         }
 
-        .button-secondary:hover {
-            background: #3d2b20;
+        .button-outline {
+            background: transparent;
+            color: #3d2b20;
+        }
 
+        .button-outline:hover {
+            background: #3d2b20;
             color: #fffaf3;
         }
 
+        /* Home photo - full image, no cropping */
 
-        /* =========================
-           HOME PHOTO
-        ========================= */
-
-        .hero-photo {
-            width: 100%;
-            max-width: 390px;
-
-            height: 500px;
-
-            margin: 0 auto;
-
-            overflow: hidden;
-
+        .hero-image {
             display: flex;
-            align-items: center;
             justify-content: center;
-
-            border-radius: 190px 190px 25px 25px;
-
-            background: #d8c4aa;
-
-            box-shadow:
-                0 20px 45px rgba(61, 43, 32, 0.12);
+            align-items: center;
         }
 
-        .hero-photo img {
+        .hero-image img {
             width: 100%;
-            height: 100%;
-
+            max-width: 430px;
+            height: auto;
             object-fit: contain;
-
-            display: block;
         }
 
 
         /* =========================
            MY STORY
-        ========================= */
+        ========================== */
 
         #story {
             background: #f6f1e8;
         }
 
-        .story-grid {
+        .story-layout {
             display: grid;
-
-            grid-template-columns: 1fr 1fr;
-
-            align-items: center;
-
+            grid-template-columns: 0.8fr 1.2fr;
             gap: 70px;
+            align-items: start;
+        }
+
+        .story-image {
+            display: flex;
+            justify-content: center;
+        }
+
+        .story-image img {
+            width: 100%;
+            max-width: 480px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .story-text {
+            font-size: 1.08rem;
+            color: #4f443d;
         }
 
         .story-text p {
-            margin-bottom: 18px;
-
-            color: #5d4d41;
-        }
-
-        .story-photo {
-            height: 500px;
-
-            overflow: hidden;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            border-radius: 18px;
-
-            background: #dfd0bd;
-
-            box-shadow:
-                0 15px 35px rgba(61, 43, 32, 0.10);
-        }
-
-        .story-photo img {
-            width: 100%;
-            height: 100%;
-
-            object-fit: contain;
-
-            display: block;
+            margin-bottom: 22px;
         }
 
 
         /* =========================
-           WHAT I DO
-        ========================= */
+           WHAT I CAN DO
+        ========================== */
 
-        #what-i-do {
-            background: #e9dccb;
+        #services {
+            background: #efe5d5;
         }
 
         .services-grid {
             display: grid;
-
             grid-template-columns: repeat(2, 1fr);
-
             gap: 22px;
         }
 
         .service-card {
-            background: #fffaf3;
-
+            background: #f8f3eb;
             padding: 32px;
-
-            border-radius: 12px;
-
-            border: 1px solid #e0d2c0;
-
-            transition:
-                transform 0.3s ease,
-                box-shadow 0.3s ease;
-        }
-
-        .service-card:hover {
-            transform: translateY(-4px);
-
-            box-shadow:
-                0 12px 25px rgba(61, 43, 32, 0.08);
-        }
-
-        .service-card:last-child {
-            grid-column: span 2;
-        }
-
-        .service-number {
-            font-size: 0.8rem;
-
-            font-weight: bold;
-
-            letter-spacing: 2px;
-
-            color: #9a7b5d;
-
-            margin-bottom: 12px;
+            border: 1px solid #d7c6b6;
         }
 
         .service-card h3 {
-            margin-bottom: 10px;
-
-            font-size: 1.25rem;
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin-bottom: 14px;
+            color: #33241c;
         }
 
         .service-card p {
-            color: #66564a;
+            color: #665950;
+            font-size: 1rem;
         }
 
 
         /* =========================
            EXPERIENCE
-        ========================= */
+        ========================== */
 
         #experience {
             background: #f6f1e8;
         }
 
         .experience-item {
-            margin-bottom: 70px;
-
-            padding-bottom: 70px;
-
-            border-bottom: 1px solid #ded0bd;
+            margin-bottom: 95px;
         }
 
         .experience-item:last-child {
             margin-bottom: 0;
-
-            padding-bottom: 0;
-
-            border-bottom: none;
         }
 
         .experience-header {
-            display: flex;
-
-            justify-content: space-between;
-
-            gap: 30px;
-
-            align-items: flex-start;
-
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 35px;
             margin-bottom: 20px;
         }
 
         .experience-date {
-            color: #8b6f55;
-
-            font-size: 0.9rem;
-
-            font-weight: bold;
-
-            white-space: nowrap;
+            color: #a0806d;
+            font-size: 1.05rem;
+            font-style: italic;
+            padding-top: 4px;
         }
 
-        .experience-title {
-            font-size: 1.6rem;
-
-            margin-bottom: 4px;
+        .experience-content h3 {
+            font-size: 2rem;
+            line-height: 1.2;
+            color: #241914;
+            margin-bottom: 6px;
         }
 
-        .experience-company {
-            color: #80644e;
-
-            font-weight: bold;
+        .company {
+            font-size: 1.2rem;
+            color: #4f4037;
+            margin-bottom: 20px;
         }
 
         .experience-description {
-            max-width: 900px;
-
-            color: #5d4d41;
-
-            margin-bottom: 22px;
+            max-width: 850px;
+            font-size: 1.05rem;
+            color: #51463f;
+            margin-bottom: 20px;
         }
 
+        /* Skill tags */
 
-        /* =========================
-           EXPERIENCE TAGS
-        ========================= */
-
-        .skills-tags {
+        .skill-tags {
             display: flex;
-
-            gap: 8px;
-
             flex-wrap: wrap;
-
+            gap: 12px;
             margin-bottom: 30px;
         }
 
-        .tag {
-            background: #e9dccb;
-
-            color: #5a4030;
-
-            padding: 6px 12px;
-
-            border-radius: 20px;
-
-            font-size: 0.78rem;
-
-            font-weight: bold;
+        .skill-tag {
+            border: 1px solid #bda595;
+            padding: 9px 20px;
+            color: #987866;
+            font-size: 0.9rem;
         }
 
+        /* Experience galleries */
 
-        /* =========================
-           PHOTO GALLERIES
-        ========================= */
-
-        .photo-grid {
+        .experience-gallery {
             display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
 
-            grid-template-columns: repeat(2, 1fr);
-
-            gap: 15px;
-
-            margin-top: 25px;
+            margin-top: 28px;
+            align-items: start;
         }
 
-        .photo-grid.single-photo {
-            grid-template-columns: minmax(250px, 500px);
-        }
-
-        .experience-photo {
-            min-height: 280px;
-
-            overflow: hidden;
-
-            display: flex;
-
-            align-items: center;
-
-            justify-content: center;
-
-            border-radius: 12px;
-
-            background: #dfd0bd;
-
-            box-shadow:
-                0 8px 20px rgba(61, 43, 32, 0.08);
-        }
-
-        .experience-photo img {
+        .experience-gallery img {
             width: 100%;
-            height: 100%;
+            height: auto;
 
+            /* IMPORTANT:
+               Keeps the entire image visible.
+               Nothing gets cropped.
+            */
             object-fit: contain;
 
-            display: block;
-
-            transition:
-                transform 0.4s ease;
+            border-radius: 0;
         }
 
-        .experience-photo:hover img {
-            transform: scale(1.02);
+        /* Single-image experience */
+
+        .single-image-gallery {
+            display: flex;
+            justify-content: center;
+            margin-top: 28px;
+        }
+
+        .single-image-gallery img {
+            width: 70%;
+            max-width: 750px;
+            height: auto;
+            object-fit: contain;
+            border-radius: 0;
         }
 
 
         /* =========================
-           SKILLS
-        ========================= */
+           SKILLS & TOOLS
+        ========================== */
 
         #skills {
-            background: #e9dccb;
+            background: #efe5d5;
         }
 
         .skills-grid {
             display: grid;
-
             grid-template-columns: repeat(3, 1fr);
-
-            gap: 22px;
+            gap: 24px;
         }
 
-        .skills-card {
-            background: #fffaf3;
-
-            padding: 30px;
-
-            border-radius: 12px;
-
-            border: 1px solid #e0d2c0;
+        .skill-card {
+            background: #f8f3eb;
+            border: 1px solid #d7c6b6;
+            padding: 35px;
         }
 
-        .skills-card h3 {
-            margin-bottom: 18px;
-
-            font-size: 1.15rem;
+        .skill-card h3 {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin-bottom: 14px;
+            color: #33241c;
         }
 
-        .skills-card ul {
+        .skill-card-description {
+            font-size: 0.95rem;
+            color: #75665d;
+            margin-bottom: 25px;
+        }
+
+        .tool-list {
             list-style: none;
         }
 
-        .skills-card li {
-            padding: 8px 0;
-
-            border-bottom: 1px solid #eadfd1;
-
-            color: #66564a;
+        .tool-list li {
+            padding: 12px 0;
+            border-bottom: 1px solid #ddcec0;
+            color: #4f443d;
+            font-size: 0.98rem;
         }
 
-        .skills-card li:last-child {
+        .tool-list li:last-child {
             border-bottom: none;
         }
 
 
         /* =========================
            CONTACT
-        ========================= */
+        ========================== */
 
         #contact {
             background: #3d2b20;
-
             color: #fffaf3;
         }
 
-        #contact .section-label {
-            color: #cdb89f;
-        }
-
-        #contact h2 {
+        #contact .section-title {
             color: #fffaf3;
+            margin-bottom: 25px;
         }
 
-        #contact .section-subtitle {
-            color: #cdb89f;
-        }
-
-        .contact-content {
-            max-width: 800px;
-        }
-
-        .contact-content > p {
-            color: #e2d5c6;
-
-            margin-bottom: 20px;
+        .contact-intro {
+            max-width: 700px;
+            font-size: 1.1rem;
+            color: #e8ddd3;
+            margin-bottom: 35px;
         }
 
         .contact-details {
             display: flex;
-
-            flex-wrap: wrap;
-
-            gap: 25px;
-
-            margin-top: 30px;
-
+            flex-direction: column;
+            gap: 10px;
             margin-bottom: 35px;
         }
 
-        .contact-detail {
+        .contact-details a {
             color: #fffaf3;
+            font-size: 1.05rem;
         }
 
-        .contact-detail span {
-            display: block;
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
 
-            font-size: 0.75rem;
-
-            text-transform: uppercase;
-
-            letter-spacing: 2px;
-
-            color: #cdb89f;
-
-            margin-bottom: 4px;
+        .contact-location {
+            color: #d7c8bd;
         }
 
         .contact-button {
             background: #fffaf3;
-
             color: #3d2b20;
+            border-color: #fffaf3;
         }
 
         .contact-button:hover {
-            background: #e9dccb;
-
-            transform: translateY(-2px);
+            background: transparent;
+            color: #fffaf3;
         }
 
 
         /* =========================
            FOOTER
-        ========================= */
+        ========================== */
 
         footer {
-            background: #2b1d16;
-
-            color: #cdb89f;
-
+            background: #2c1e17;
+            color: #cdbeb3;
             text-align: center;
-
-            padding: 25px;
-
-            font-size: 0.8rem;
+            padding: 22px;
+            font-size: 0.85rem;
         }
 
 
         /* =========================
-           MOBILE
-        ========================= */
+           RESPONSIVE
+        ========================== */
 
-        @media (max-width: 800px) {
-
-            nav {
-                padding: 15px 5%;
-            }
+        @media (max-width: 900px) {
 
             .nav-container {
                 flex-direction: column;
-
                 align-items: flex-start;
-
-                gap: 12px;
             }
 
             .nav-links {
-                gap: 12px 18px;
-            }
-
-            section {
-                padding: 65px 0;
-            }
-
-            #home {
-                min-height: auto;
+                gap: 16px;
             }
 
             .hero {
                 grid-template-columns: 1fr;
-
                 gap: 45px;
             }
 
-            .hero-text h1 {
-                font-size: 3.2rem;
+            .hero-image {
+                justify-content: flex-start;
             }
 
-            .hero-photo {
-                height: 450px;
-            }
-
-            .story-grid {
+            .story-layout {
                 grid-template-columns: 1fr;
-
-                gap: 40px;
-            }
-
-            .story-photo {
-                height: 400px;
-
-                order: -1;
             }
 
             .services-grid {
                 grid-template-columns: 1fr;
-            }
-
-            .service-card:last-child {
-                grid-column: span 1;
             }
 
             .skills-grid {
@@ -748,50 +556,56 @@
             }
 
             .experience-header {
-                flex-direction: column;
-
-                gap: 5px;
-            }
-
-            .photo-grid {
                 grid-template-columns: 1fr;
+                gap: 8px;
             }
 
-            .photo-grid.single-photo {
-                grid-template-columns: 1fr;
+            .experience-gallery {
+                grid-template-columns: repeat(2, 1fr);
             }
 
-            .experience-photo {
-                min-height: 300px;
+            .single-image-gallery img {
+                width: 100%;
             }
         }
 
 
-        @media (max-width: 500px) {
+        @media (max-width: 600px) {
 
-            .container {
-                width: 90%;
+            section {
+                padding: 70px 6%;
             }
 
-            .hero-text h1 {
-                font-size: 2.7rem;
+            .section-title {
+                font-size: 3.4rem;
+                margin-bottom: 45px;
             }
 
-            h2 {
-                font-size: 2rem;
+            .hero h1 {
+                font-size: 4rem;
             }
 
-            .hero-photo {
-                height: 400px;
+            .hero-role {
+                font-size: 1.15rem;
             }
 
-            .contact-details {
-                flex-direction: column;
+            .experience-content h3 {
+                font-size: 1.6rem;
+            }
 
+            .experience-gallery {
+                grid-template-columns: 1fr;
                 gap: 18px;
             }
-        }
 
+            .skill-tags {
+                gap: 8px;
+            }
+
+            .skill-tag {
+                padding: 8px 14px;
+            }
+        }
     </style>
 </head>
 
@@ -801,10 +615,9 @@
 
     <!-- =========================
          NAVIGATION
-    ========================= -->
+    ========================== -->
 
     <nav>
-
         <div class="nav-container">
 
             <div class="logo">
@@ -812,84 +625,63 @@
             </div>
 
             <ul class="nav-links">
-
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-
-                <li>
-                    <a href="#story">My Story</a>
-                </li>
-
-                <li>
-                    <a href="#what-i-do">What I Do</a>
-                </li>
-
-                <li>
-                    <a href="#experience">Experience</a>
-                </li>
-
-                <li>
-                    <a href="#skills">Skills & Tools</a>
-                </li>
-
-                <li>
-                    <a href="#contact">Get in Touch</a>
-                </li>
-
+                <li><a href="#home">Home</a></li>
+                <li><a href="#story">My Story</a></li>
+                <li><a href="#services">What I Do</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills & Tools</a></li>
+                <li><a href="#contact">Get in Touch</a></li>
             </ul>
 
         </div>
-
     </nav>
+
 
 
     <!-- =========================
          HOME
-    ========================= -->
+    ========================== -->
 
     <section id="home">
 
-        <div class="container hero">
+        <div class="hero">
 
+            <div class="hero-content">
 
-            <div class="hero-text">
+                <div class="hero-small">
+                    Hi,
+                </div>
 
                 <h1>
-                    Hi,<br>
-                    I'm Kenth Manuel.
+                    I'm Kenth<br>
+                    Manuel.
                 </h1>
 
-                <p class="hero-title">
+                <div class="hero-role">
                     Financial & Administrative Support
+                </div>
+
+                <p class="hero-text">
+                    With two years of full-time service experience and over a year
+                    supporting financial and administrative work, I've built strong
+                    skills in Excel, Power BI, communication, and keeping things
+                    organized and on track.
                 </p>
 
-                <p class="hero-description">
-                    With two years of full-time service experience and over a year supporting financial and administrative work, I've built strong skills in Excel, Power BI, communication, and keeping things organized and on track.
-                </p>
-
-                <div class="buttons">
-
-                    <a
-                        href="#experience"
-                        class="button button-primary"
-                    >
+                <div class="hero-buttons">
+                    <a href="#experience" class="button">
                         View My Experience
                     </a>
 
-                    <a
-                        href="#contact"
-                        class="button button-secondary"
-                    >
+                    <a href="#contact" class="button button-outline">
                         Let's Connect
                     </a>
-
                 </div>
 
             </div>
 
 
-            <div class="hero-photo">
+            <div class="hero-image">
 
                 <img
                     src="Him.JPG"
@@ -898,183 +690,161 @@
 
             </div>
 
-
         </div>
 
     </section>
+
 
 
     <!-- =========================
          MY STORY
-    ========================= -->
+    ========================== -->
 
     <section id="story">
 
-        <div class="container story-grid">
+        <div class="container">
 
+            <h2 class="section-title">
+                My Story
+            </h2>
 
-            <div class="story-text">
+            <div class="story-layout">
 
-                <div class="section-label">
-                    About Me
+                <div class="story-image">
+
+                    <img
+                        src="my%20story.jpeg"
+                        alt="Kenth Manuel"
+                    >
+
                 </div>
 
-                <h2>
-                    My Story
-                </h2>
 
-                <p class="section-subtitle">
-                    Reliable work starts with the details.
-                </p>
+                <div class="story-text">
 
+                    <p>
+                        My experience has taught me that good work often comes down
+                        to the details.
+                    </p>
 
-                <p>
-                    My experience has taught me that good work often comes down to the details.
-                </p>
+                    <p>
+                        I developed strong communication, organization, and
+                        time-management skills through two years of full-time
+                        service work. I later brought those skills into an office
+                        environment, where I gained hands-on experience supporting
+                        financial and administrative operations.
+                    </p>
 
-                <p>
-                    I developed strong communication, organization, and time-management skills through two years of full-time service work. I later brought those skills into an office environment, where I gained hands-on experience supporting financial and administrative operations.
-                </p>
+                    <p>
+                        At Sto. Nino De Cebu Finance Corp., I worked with financial
+                        records, tracked budgets, handled transactions, supported
+                        customers, and used tools such as Microsoft Excel and Power BI
+                        to keep information organized and accurate.
+                    </p>
 
-                <p>
-                    At Sto. Nino De Cebu Finance Corp., I worked with financial records, tracked budgets, handled transactions, supported customers, and used tools such as Microsoft Excel and Power BI to keep information organized and accurate.
-                </p>
+                    <p>
+                        Today, I'm looking to build on that experience in a
+                        Financial & Administrative Support role where reliability,
+                        accuracy, and organization matter.
+                    </p>
 
-                <p>
-                    Today, I'm looking to build on that experience in a Financial & Administrative Support role where reliability, accuracy, and organization matter.
-                </p>
-
-            </div>
-
-
-            <div class="story-photo">
-
-                <img
-                    src="my%20story.jpeg"
-                    alt="Kenth Manuel"
-                >
+                </div>
 
             </div>
-
 
         </div>
 
     </section>
 
 
+
     <!-- =========================
          WHAT I CAN DO FOR YOU
-    ========================= -->
+    ========================== -->
 
-    <section id="what-i-do">
+    <section id="services">
 
         <div class="container">
 
-
-            <div class="section-label">
-                Services
-            </div>
-
-            <h2>
+            <h2 class="section-title">
                 What I Can Do For You
             </h2>
 
-            <p class="section-subtitle">
-                Practical support that keeps things organized.
-            </p>
-
-            <p class="section-intro">
-                From financial records and reporting to administrative coordination and customer support, I can help keep day-to-day work accurate and on track.
-            </p>
-
-
             <div class="services-grid">
 
-
                 <div class="service-card">
-
-                    <div class="service-number">
-                        01
-                    </div>
 
                     <h3>
                         Financial Support
                     </h3>
 
                     <p>
-                        I can help keep financial information organized and accurate through transaction tracking, budget monitoring, reconciliation, and documentation.
+                        I can help keep financial information organized and accurate
+                        through transaction tracking, budget monitoring,
+                        reconciliation, and documentation.
                     </p>
 
                 </div>
 
 
                 <div class="service-card">
-
-                    <div class="service-number">
-                        02
-                    </div>
 
                     <h3>
                         Data & Reporting
                     </h3>
 
                     <p>
-                        Comfortable working with Microsoft Excel and Power BI to organize information, maintain records, and support reporting.
+                        Comfortable working with Microsoft Excel and Power BI to
+                        organize information, maintain records, and support
+                        reporting.
                     </p>
 
                 </div>
 
 
                 <div class="service-card">
-
-                    <div class="service-number">
-                        03
-                    </div>
 
                     <h3>
                         Administrative Support
                     </h3>
 
                     <p>
-                        From scheduling and email management to documentation and coordination, I can help keep day-to-day operations running smoothly.
+                        From scheduling and email management to documentation and
+                        coordination, I can help keep day-to-day operations
+                        running smoothly.
                     </p>
 
                 </div>
 
 
                 <div class="service-card">
-
-                    <div class="service-number">
-                        04
-                    </div>
 
                     <h3>
                         Customer Support
                     </h3>
 
                     <p>
-                        Clear communication and a professional approach help me handle customer concerns and work effectively with different people.
+                        Clear communication and a professional approach help me
+                        handle customer concerns and work effectively with
+                        different people.
                     </p>
 
                 </div>
 
 
                 <div class="service-card">
-
-                    <div class="service-number">
-                        05
-                    </div>
 
                     <h3>
                         Detail-Focused Work
                     </h3>
 
                     <p>
-                        I pay attention to the small things, especially when working with records, confidential information, and tasks where accuracy matters.
+                        I pay attention to the small things, especially when
+                        working with records, confidential information, and tasks
+                        where accuracy matters.
                     </p>
 
                 </div>
-
 
             </div>
 
@@ -1083,458 +853,389 @@
     </section>
 
 
+
     <!-- =========================
          EXPERIENCE
-    ========================= -->
+    ========================== -->
 
     <section id="experience">
 
         <div class="container">
 
-
-            <div class="section-label">
-                Career
-            </div>
-
-            <h2>
+            <h2 class="section-title">
                 My Experience
             </h2>
 
-            <p class="section-subtitle">
-                Experience that shaped how I work.
-            </p>
-
-            <p class="section-intro">
-                Each role has helped me build practical skills in organization, communication, reliability, and working with people and information.
-            </p>
 
 
             <!-- FINANCIAL & ADMINISTRATIVE SUPPORT -->
 
             <div class="experience-item">
 
-
                 <div class="experience-header">
-
-                    <div>
-
-                        <h3 class="experience-title">
-                            Financial & Administrative Support
-                        </h3>
-
-                        <p class="experience-company">
-                            Sto. Nino De Cebu Finance Corp.
-                        </p>
-
-                    </div>
 
                     <div class="experience-date">
                         Feb 2025 – Feb 2026
                     </div>
 
+                    <div class="experience-content">
+
+                        <h3>
+                            Financial & Administrative Support
+                        </h3>
+
+                        <div class="company">
+                            Sto. Nino De Cebu Finance Corp.
+                        </div>
+
+                        <p class="experience-description">
+                            Kept a department's finances accurate and its operations
+                            running — reconciling transactions, tracking budgets
+                            against actuals, and flagging variances early — while
+                            also handling scheduling, correspondence, and customer
+                            support.
+                        </p>
+
+                        <div class="skill-tags">
+
+                            <span class="skill-tag">
+                                Budget Tracking
+                            </span>
+
+                            <span class="skill-tag">
+                                Excel & Power BI
+                            </span>
+
+                            <span class="skill-tag">
+                                Confidential Data
+                            </span>
+
+                            <span class="skill-tag">
+                                Customer Support
+                            </span>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
 
-                <p class="experience-description">
-                    Kept a department's finances accurate and its operations running — reconciling transactions, tracking budgets against actuals, and flagging variances early — while also handling scheduling, correspondence, and customer support.
-                </p>
+                <div class="experience-gallery">
 
+                    <img
+                        src="work%201st.jpeg"
+                        alt="Kenth Manuel financial work"
+                    >
 
-                <div class="skills-tags">
+                    <img
+                        src="work%202nd.jpeg"
+                        alt="Kenth Manuel financial work"
+                    >
 
-                    <span class="tag">
-                        Budget Tracking
-                    </span>
+                    <img
+                        src="work%203rd.jpeg"
+                        alt="Kenth Manuel at work"
+                    >
 
-                    <span class="tag">
-                        Excel & Power BI
-                    </span>
-
-                    <span class="tag">
-                        Confidential Data
-                    </span>
-
-                    <span class="tag">
-                        Customer Support
-                    </span>
-
-                </div>
-
-
-                <div class="photo-grid">
-
-
-                    <div class="experience-photo">
-
-                        <img
-                            src="work%201st.jpeg"
-                            alt="Kenth Manuel at work"
-                        >
-
-                    </div>
-
-
-                    <div class="experience-photo">
-
-                        <img
-                            src="work%202nd.jpeg"
-                            alt="Kenth Manuel at work"
-                        >
-
-                    </div>
-
-
-                    <div class="experience-photo">
-
-                        <img
-                            src="work%203rd.jpeg"
-                            alt="Kenth Manuel at work"
-                        >
-
-                    </div>
-
-
-                    <div class="experience-photo">
-
-                        <img
-                            src="work%204th.jpeg"
-                            alt="Kenth Manuel at work"
-                        >
-
-                    </div>
-
+                    <img
+                        src="work%204th.jpeg"
+                        alt="Kenth Manuel working with data"
+                    >
 
                 </div>
 
             </div>
+
 
 
             <!-- SEMINARY TEACHER -->
 
             <div class="experience-item">
 
-
                 <div class="experience-header">
-
-                    <div>
-
-                        <h3 class="experience-title">
-                            Seminary Teacher of Youth
-                        </h3>
-
-                        <p class="experience-company">
-                            The Church of Jesus Christ of Latter-day Saints
-                        </p>
-
-                    </div>
 
                     <div class="experience-date">
                         Sept 2026 – Present
                     </div>
 
+                    <div class="experience-content">
+
+                        <h3>
+                            Seminary Teacher of Youth
+                        </h3>
+
+                        <div class="company">
+                            The Church of Jesus Christ of Latter-day Saints
+                        </div>
+
+                        <p class="experience-description">
+                            Plans and leads weekly educational classes for youth,
+                            adapting lessons to different backgrounds and needs.
+                            This role involves weekly lesson planning, classroom
+                            facilitation, communication, group coordination, and
+                            adapting plans when circumstances change.
+                        </p>
+
+                        <div class="skill-tags">
+
+                            <span class="skill-tag">
+                                Communication
+                            </span>
+
+                            <span class="skill-tag">
+                                Planning
+                            </span>
+
+                            <span class="skill-tag">
+                                Facilitation
+                            </span>
+
+                            <span class="skill-tag">
+                                Adaptability
+                            </span>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
 
-                <p class="experience-description">
-                    Plans and leads weekly educational classes for youth, adapting lessons to different backgrounds and needs. This role involves weekly lesson planning, classroom facilitation, communication, group coordination, and adapting plans when circumstances change.
-                </p>
+                <div class="experience-gallery">
 
+                    <img
+                        src="sem%201.jpeg"
+                        alt="Kenth Manuel teaching youth"
+                    >
 
-                <div class="skills-tags">
+                    <img
+                        src="sem%202.jpeg"
+                        alt="Kenth Manuel teaching youth"
+                    >
 
-                    <span class="tag">
-                        Communication
-                    </span>
+                    <img
+                        src="FSY.jpg"
+                        alt="Kenth Manuel with youth"
+                    >
 
-                    <span class="tag">
-                        Planning
-                    </span>
-
-                    <span class="tag">
-                        Facilitation
-                    </span>
-
-                    <span class="tag">
-                        Adaptability
-                    </span>
-
-                </div>
-
-
-                <div class="photo-grid">
-
-
-                    <div class="experience-photo">
-
-                        <img
-                            src="sem%201.jpeg"
-                            alt="Kenth Manuel teaching seminary"
-                        >
-
-                    </div>
-
-
-                    <div class="experience-photo">
-
-                        <img
-                            src="sem%202.jpeg"
-                            alt="Kenth Manuel teaching seminary"
-                        >
-
-                    </div>
-
-
-                    <div class="experience-photo">
-
-                        <img
-                            src="FSY.jpg"
-                            alt="Kenth Manuel at FSY"
-                        >
-
-                    </div>
-
-
-                    <div class="experience-photo">
-
-                        <img
-                            src="fsy%201.jpg"
-                            alt="Kenth Manuel at FSY"
-                        >
-
-                    </div>
-
+                    <img
+                        src="fsy%201.jpg"
+                        alt="Kenth Manuel with youth"
+                    >
 
                 </div>
 
             </div>
+
 
 
             <!-- BUILDING MAINTENANCE -->
 
             <div class="experience-item">
 
-
                 <div class="experience-header">
-
-                    <div>
-
-                        <h3 class="experience-title">
-                            Building Maintenance & Cleaning
-                        </h3>
-
-                        <p class="experience-company">
-                            Facility Operations
-                        </p>
-
-                    </div>
 
                     <div class="experience-date">
                         June 2024 – Dec 2024
                     </div>
 
-                </div>
+                    <div class="experience-content">
 
+                        <h3>
+                            Building Maintenance & Cleaning
+                        </h3>
 
-                <p class="experience-description">
-                    Maintained facilities through consistent, detail-focused work while following standards for cleanliness, organization, and reliability. The role required good time management, attention to detail, and the ability to complete routine responsibilities consistently.
-                </p>
+                        <div class="company">
+                            Facility operations
+                        </div>
 
+                        <p class="experience-description">
+                            Maintained facilities through consistent,
+                            detail-focused work while following standards for
+                            cleanliness, organization, and reliability. The role
+                            required good time management, attention to detail,
+                            and the ability to complete routine responsibilities
+                            consistently.
+                        </p>
 
-                <div class="skills-tags">
+                        <div class="skill-tags">
 
-                    <span class="tag">
-                        Reliability
-                    </span>
+                            <span class="skill-tag">
+                                Reliability
+                            </span>
 
-                    <span class="tag">
-                        Attention to Detail
-                    </span>
+                            <span class="skill-tag">
+                                Attention to Detail
+                            </span>
 
-                    <span class="tag">
-                        Time Management
-                    </span>
+                            <span class="skill-tag">
+                                Time Management
+                            </span>
 
-                </div>
-
-
-                <div class="photo-grid single-photo">
-
-
-                    <div class="experience-photo">
-
-                        <img
-                            src="faci%20main.jpeg"
-                            alt="Building maintenance and facility work"
-                        >
+                        </div>
 
                     </div>
 
+                </div>
+
+
+                <div class="single-image-gallery">
+
+                    <img
+                        src="faci%20main.jpeg"
+                        alt="Building maintenance work"
+                    >
 
                 </div>
 
             </div>
+
 
 
             <!-- FULL-TIME MISSIONARY -->
 
             <div class="experience-item">
 
-
                 <div class="experience-header">
-
-                    <div>
-
-                        <h3 class="experience-title">
-                            Full-Time Missionary
-                        </h3>
-
-                        <p class="experience-company">
-                            The Church of Jesus Christ of Latter-day Saints
-                        </p>
-
-                    </div>
 
                     <div class="experience-date">
                         May 2022 – May 2024
                     </div>
 
+                    <div class="experience-content">
+
+                        <h3>
+                            Full-Time Missionary
+                        </h3>
+
+                        <div class="company">
+                            The Church of Jesus Christ of Latter-day Saints
+                        </div>
+
+                        <p class="experience-description">
+                            Managed a demanding daily schedule of appointments,
+                            goals, and responsibilities while working with people
+                            from diverse backgrounds. Developed strong
+                            communication, teamwork, scheduling, and adaptability
+                            skills while balancing multiple priorities and
+                            adjusting quickly when plans changed.
+                        </p>
+
+                        <div class="skill-tags">
+
+                            <span class="skill-tag">
+                                Planning
+                            </span>
+
+                            <span class="skill-tag">
+                                Scheduling
+                            </span>
+
+                            <span class="skill-tag">
+                                Adaptability
+                            </span>
+
+                            <span class="skill-tag">
+                                Teamwork
+                            </span>
+
+                            <span class="skill-tag">
+                                Communication
+                            </span>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
 
-                <p class="experience-description">
-                    Managed a demanding daily schedule of appointments, goals, and responsibilities while working with people from diverse backgrounds. Developed strong communication, teamwork, scheduling, and adaptability skills while balancing multiple priorities and adjusting quickly when plans changed.
-                </p>
+                <div class="experience-gallery">
 
+                    <img
+                        src="First%20pic.jpeg"
+                        alt="Kenth Manuel during his full-time missionary service"
+                    >
 
-                <div class="skills-tags">
+                    <img
+                        src="2nd.jpeg"
+                        alt="Kenth Manuel during his full-time missionary service"
+                    >
 
-                    <span class="tag">
-                        Scheduling
-                    </span>
+                    <img
+                        src="3rd.jpeg"
+                        alt="Kenth Manuel during his full-time missionary service"
+                    >
 
-                    <span class="tag">
-                        Adaptability
-                    </span>
-
-                    <span class="tag">
-                        Teamwork
-                    </span>
-
-                    <span class="tag">
-                        Communication
-                    </span>
-
-                    <span class="tag">
-                        Planning
-                    </span>
-
-                </div>
-
-
-                <div class="photo-grid">
-
-
-                    <div class="experience-photo">
-
-                        <img
-                            src="First%20pic.jpeg"
-                            alt="Kenth Manuel during his missionary service"
-                        >
-
-                    </div>
-
-
-                    <div class="experience-photo">
-
-                        <img
-                            src="2nd.jpeg"
-                            alt="Kenth Manuel during his missionary service"
-                        >
-
-                    </div>
-
-
-                    <div class="experience-photo">
-
-                        <img
-                            src="3rd.jpeg"
-                            alt="Kenth Manuel during his missionary service"
-                        >
-
-                    </div>
-
-
-                    <div class="experience-photo">
-
-                        <img
-                            src="4th.jpeg"
-                            alt="Kenth Manuel during his missionary service"
-                        >
-
-                    </div>
-
+                    <img
+                        src="4th.jpeg"
+                        alt="Kenth Manuel during his full-time missionary service"
+                    >
 
                 </div>
 
             </div>
-
 
         </div>
 
     </section>
 
 
+
     <!-- =========================
          SKILLS & TOOLS
-    ========================= -->
+    ========================== -->
 
     <section id="skills">
 
         <div class="container">
 
-
-            <div class="section-label">
-                Capabilities
-            </div>
-
-            <h2>
+            <h2 class="section-title">
                 Skills & Tools
             </h2>
-
-            <p class="section-subtitle">
-                Tools I use to stay organized and productive.
-            </p>
-
-            <p class="section-intro">
-                A combination of technical skills, communication, and practical organization helps me handle both detailed tasks and day-to-day operations.
-            </p>
 
 
             <div class="skills-grid">
 
 
-                <div class="skills-card">
+                <!-- FINANCIAL & DATA -->
+
+                <div class="skill-card">
 
                     <h3>
                         Financial & Data
                     </h3>
 
-                    <ul>
+                    <p class="skill-card-description">
+                        Tools and skills I use to organize financial information,
+                        maintain accurate records, and support reporting.
+                    </p>
+
+                    <ul class="tool-list">
 
                         <li>
-                            Microsoft Excel
+                            <strong>Microsoft Excel</strong><br>
+                            Used for organizing financial information, tracking
+                            budgets, maintaining records, and working with data.
                         </li>
 
                         <li>
-                            Power BI
+                            <strong>Power BI</strong><br>
+                            Used to organize and present information in a way that
+                            supports reporting and easier understanding of data.
                         </li>
 
                         <li>
-                            Data Entry & Documentation
+                            <strong>Data Entry & Documentation</strong><br>
+                            Comfortable handling records carefully and keeping
+                            information organized and accurate.
                         </li>
 
                         <li>
-                            Confidentiality
+                            <strong>Confidentiality</strong><br>
+                            Experienced in working with financial and other
+                            sensitive information responsibly.
                         </li>
 
                     </ul>
@@ -1542,28 +1243,44 @@
                 </div>
 
 
-                <div class="skills-card">
+
+                <!-- COMMUNICATION & COORDINATION -->
+
+                <div class="skill-card">
 
                     <h3>
                         Communication & Coordination
                     </h3>
 
-                    <ul>
+                    <p class="skill-card-description">
+                        Skills developed through customer support, teaching,
+                        teamwork, scheduling, and working with different people.
+                    </p>
+
+                    <ul class="tool-list">
 
                         <li>
-                            Email & Calendar Management
+                            <strong>Email & Calendar Management</strong><br>
+                            Able to organize schedules, appointments, messages,
+                            and day-to-day coordination.
                         </li>
 
                         <li>
-                            Customer Service
+                            <strong>Customer Service</strong><br>
+                            Comfortable communicating professionally and
+                            responding to customer needs and concerns.
                         </li>
 
                         <li>
-                            Communication
+                            <strong>Communication</strong><br>
+                            Able to explain information clearly and work with
+                            people from different backgrounds.
                         </li>
 
                         <li>
-                            Negotiation
+                            <strong>Negotiation</strong><br>
+                            Developed through customer-facing and people-focused
+                            work that required understanding different needs.
                         </li>
 
                     </ul>
@@ -1571,35 +1288,50 @@
                 </div>
 
 
-                <div class="skills-card">
+
+                <!-- OPERATIONS -->
+
+                <div class="skill-card">
 
                     <h3>
                         Operations
                     </h3>
 
-                    <ul>
+                    <p class="skill-card-description">
+                        Practical skills I use to stay organized, manage
+                        responsibilities, and keep work moving smoothly.
+                    </p>
+
+                    <ul class="tool-list">
 
                         <li>
-                            Problem-Solving & Adaptability
+                            <strong>Problem-Solving & Adaptability</strong><br>
+                            Able to adjust plans and respond when priorities or
+                            circumstances change.
                         </li>
 
                         <li>
-                            Time Management & Organization
+                            <strong>Time Management & Organization</strong><br>
+                            Experienced in managing schedules, deadlines, and
+                            multiple responsibilities.
                         </li>
 
                         <li>
-                            Teamwork & Collaboration
+                            <strong>Teamwork & Collaboration</strong><br>
+                            Comfortable working with others toward shared goals
+                            and responsibilities.
                         </li>
 
                         <li>
-                            Multitasking & Prioritization
+                            <strong>Multitasking & Prioritization</strong><br>
+                            Able to balance multiple tasks while keeping important
+                            responsibilities on track.
                         </li>
 
                     </ul>
 
                 </div>
 
-
             </div>
 
         </div>
@@ -1607,108 +1339,71 @@
     </section>
 
 
+
     <!-- =========================
-         CONTACT
-    ========================= -->
+         LET'S WORK TOGETHER
+    ========================== -->
 
     <section id="contact">
 
         <div class="container">
 
+            <h2 class="section-title">
+                Let's Work Together
+            </h2>
 
-            <div class="contact-content">
+            <p class="contact-intro">
+                Looking for reliable Financial & Administrative Support?
+            </p>
 
+            <p class="contact-intro">
+                I'm open to opportunities where I can contribute my experience
+                in financial administration, data handling, customer support,
+                and day-to-day operations.
+            </p>
 
-                <div class="section-label">
-                    Contact
-                </div>
-
-                <h2>
-                    Let's Work Together
-                </h2>
-
-
-                <p>
-                    Looking for reliable Financial & Administrative Support?
-                </p>
-
-
-                <p>
-                    I'm open to opportunities where I can contribute my experience in financial administration, data handling, customer support, and day-to-day operations.
-                </p>
+            <p class="contact-intro">
+                If you're looking for someone who is organized, detail-focused,
+                adaptable, and dependable, I'd be happy to connect.
+            </p>
 
 
-                <p>
-                    If you're looking for someone who is organized, detail-focused, adaptable, and dependable, I'd be happy to connect.
-                </p>
+            <div class="contact-details">
 
-
-                <div class="contact-details">
-
-
-                    <div class="contact-detail">
-
-                        <span>
-                            Email
-                        </span>
-
-                        <a href="mailto:kenth.manuel11@gmail.com">
-                            kenth.manuel11@gmail.com
-                        </a>
-
-                    </div>
-
-
-                    <div class="contact-detail">
-
-                        <span>
-                            Phone
-                        </span>
-
-                        <a href="tel:09481226494">
-                            09481226494
-                        </a>
-
-                    </div>
-
-
-                    <div class="contact-detail">
-
-                        <span>
-                            Location
-                        </span>
-
-                        Dagupan City, Philippines
-
-                    </div>
-
-
-                </div>
-
-
-                <a
-                    href="mailto:kenth.manuel11@gmail.com"
-                    class="button contact-button"
-                >
-                    Let's Connect
+                <a href="mailto:kenth.manuel11@gmail.com">
+                    kenth.manuel11@gmail.com
                 </a>
 
+                <a href="tel:09481226494">
+                    09481226494
+                </a>
+
+                <div class="contact-location">
+                    Dagupan City, Philippines
+                </div>
 
             </div>
+
+
+            <a
+                href="mailto:kenth.manuel11@gmail.com"
+                class="button contact-button"
+            >
+                Let's Connect
+            </a>
 
         </div>
 
     </section>
 
 
+
     <!-- =========================
          FOOTER
-    ========================= -->
+    ========================== -->
 
     <footer>
-
         © 2026 Kenth Manuel. All rights reserved.
-
     </footer>
 
 
